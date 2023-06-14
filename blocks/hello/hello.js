@@ -1,6 +1,6 @@
 import { getLibs, setLibs } from '../../scripts/utils.js';
 
-export default async function init(el) {
+export default async (el) => {
   setLibs();
   const { textContent } = el;
   el.innerHTML = '';
