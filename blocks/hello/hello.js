@@ -1,7 +1,6 @@
-import { getLibs, setLibs } from '../../scripts/utils.js';
+import { getLibs } from '../../scripts/utils.js';
 
 export default async (el) => {
-  setLibs();
   const { textContent } = el;
   el.innerHTML = '';
   const textArr = textContent.trim().split(',');
