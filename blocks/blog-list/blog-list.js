@@ -12,9 +12,9 @@ export default async (el) => {
     class: 'blog-list-container'
   });
 
-  r = await r.json();
+  const d = await r.json();
 
-  await Promise.all(r.data.map((p) => {
+  await Promise.all(d.data.map((p) => {
 
     return new Promise(async (res) => {
       
@@ -26,7 +26,7 @@ export default async (el) => {
       const heading =- doc.querySelector('h1, h2, h3, h4, h5, p');
       const li = createTag('li', { class: 'blog-list-item'}, heading);
       list.append(li);
-      
+
       res();
     }); 
 
