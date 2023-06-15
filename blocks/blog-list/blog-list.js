@@ -23,7 +23,7 @@ export default async (el) => {
       const html = await r.text();
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
-      const heading =- doc.querySelector('h1, h2, h3, h4, h5, p');
+      const heading = doc.querySelector('h1, h2, h3, h4, h5, p');
       const li = createTag('li', { class: 'blog-list-item'}, heading);
       ul.append(li);
 
