@@ -2,11 +2,11 @@ version: 1
 
 sitemaps: 
   website: 
-    origin: https://main--bbythewa--bbythewa.hlx.page/
+    origin: https://main--bbythewa--bbythewa.hlx.page
     lastmod: YYYY-MM-DD
     languages:
       default: 
         source: /blog/query-index.json
         destination: /blog/sitemap.xml
         hreflang: en
-        alternate: /{path}.html
+        alternate: /{path}
