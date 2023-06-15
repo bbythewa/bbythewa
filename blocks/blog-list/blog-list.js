@@ -32,5 +32,5 @@ export default async (el) => {
 
   }));
 
-  el.append(li);
+  el.append(ul);
 }
